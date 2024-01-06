@@ -65,6 +65,28 @@ export default function Header() {
                                     Contact
                                 </NavLink>
                             </li>
+
+                            <li>
+                                <NavLink
+                                    to={'/user'}
+                                    className={(isActive) =>
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${isActive ? "text-orange-400" : "text-gray-700"}`
+                                    }
+                                >
+                                    User
+                                </NavLink>
+                            </li>
+
+                            <li>
+                                <NavLink
+                                    to={'/github'}
+                                    className={(isActive) =>
+                                        `block py-2 pr-4 pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0 ${isActive ? "text-orange-400" : "text-gray-700"}`
+                                    }
+                                >
+                                    Github
+                                </NavLink>
+                            </li>
                             
                             
                         </ul>
